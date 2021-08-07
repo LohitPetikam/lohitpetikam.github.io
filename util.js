@@ -1,3 +1,25 @@
+function write_navbar() {
+	nav_html = 
+`
+<div class="d-flex flex-wrap justify-content-center py-3 mb-4">
+	<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+		<!-- <img src="./assets/images/test.png" class="bi me-2" width="40" height="40"><use xlink:href="#bootstrap"/></img> -->
+		<span class="display-1 fs-1">Lohit Petikam, PhD</span>
+	</a>
+
+	<ul class="nav nav-pills">
+		<li class="nav-item"><a href="#shading-rig" class="nav-link" aria-current="page">Shading Rig</a></li>
+		<li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+		<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+		<li class="nav-item"><a href="#art" class="nav-link">Art</a></li>
+		<li class="nav-item"><a href="#music" class="nav-link">Music</a></li>
+		<li class="nav-item"><a href="https://www.notion.so/lohit/Lohit-Petikam-00cdaff499224fc0a3acd1fcfebcba94" class="nav-link">CV <span class="oi oi-external-link" style="font-size: 80%"></span></a></li>
+	</ul>
+</div>
+`
+	document.write(nav_html)
+}
+
 function write_project_card(img,title) {
 
 	var card_html = 

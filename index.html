@@ -8,8 +8,6 @@
 	<meta name="generator" content="">
 	<title>Lohit Petikam</title>
 
-	<!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/"> -->
-
 	
 	<link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
@@ -34,10 +32,9 @@
 	</style>
 
 	
-	<!-- Custom styles for this template -->
 	<link href="starter-template.css" rel="stylesheet">
-
-	<script src="util.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="./util.js"></script>
 
 </head>
 <body>
@@ -45,21 +42,10 @@
 <div class="col-lg-8 mx-auto p-3 py-md-5">
 <header class="d-flex align-items-center pb-3 mb-5">
 	<div class="container">
-		<div class="d-flex flex-wrap justify-content-center py-3 mb-4">
-			<a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-				<!-- <img src="./assets/images/test.png" class="bi me-2" width="40" height="40"><use xlink:href="#bootstrap"/></img> -->
-				<span class="fs-1">Lohit Dev Petikam, PhD</span>
-			</a>
 
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="#shading-rig" class="nav-link" aria-current="page">Shading Rig</a></li>
-				<li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-				<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-				<li class="nav-item"><a href="#art" class="nav-link">Art</a></li>
-				<li class="nav-item"><a href="#music" class="nav-link">Music</a></li>
-				<li class="nav-item"><a href="https://www.notion.so/lohit/Lohit-Petikam-00cdaff499224fc0a3acd1fcfebcba94" class="nav-link">CV <span class="oi oi-external-link" style="font-size: 80%"></span></a></li>
-			</ul>
-		</div>
+		<script type="text/javascript">
+			write_navbar();
+		</script>
 
 
 
@@ -72,11 +58,10 @@
 					</div>
 					<div class="col-md-9">
 						<p class="lead fs-5">
-							I'm a Computer Graphics researcher and recent PhD graduate at CMIC, Victoria University of Wellington, New Zealand. 
+							My name is Lohit Dev Petikam. I'm a computer graphics researcher and recent PhD graduate at CMIC, Victoria University of Wellington, New Zealand. 
 							My thesis developed new 3D workflows to solve problems in artistic editing and stylised rendering. 
 							I'm now seeking R&D opportunities with a keen interest in solving problems in creative industries.
 						</p>
-						<!-- <p> <a class="facebook" href="facebook.com">-</a> </p> -->
 						<p>
 							✉️ <a style="display: inline;" href="mailto:lohit.petikam@gmail.com">lohit.petikam@gmail.com</a>
 							<br>
@@ -87,8 +72,6 @@
 
 						</p>
 					</div>
-
-					<!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
 				</div>
 			</div>
 		</div>
@@ -100,44 +83,26 @@
 
 <main>
 
+<!-- 
+	<div class="container"> -->
 
-	<div class="container">
+	<div class="mb-4 text-white rounded bg-dark" id="shading-rig" style="background-image: url(./assets/images/rep-img.png); background-size: 130%; background-position: center; background-repeat: no-repeat;">
+		<div class="col-md-8 p-0">
+			<div class="container rounded p-4" style="background: #00000077; text-shadow: 0 5px 7px #000000ff;">
+				
+				<h1 class="display-6">Shading Rig</h1>
 
-		<div class="mb-4 text-white rounded bg-dark" id="shading-rig" style="background-image: url(./assets/images/rep-img.png); background-size: 130%; background-position: center; background-repeat: no-repeat;">
-			<div class="col-md-8 p-3" style="/*background: #00000077; text-shadow: 0 5px 7px #000000ff;*/">
-				<div class="container rounded p-2" style="background: #00000077; text-shadow: 0 5px 7px #000000ff;">
-					
-					<h1 class="display-6">Shading Rig</h1>
+				<p class="lead fs-5"> Shading Rig is a new framework for art-directing dynamic 3D toon shading. It lets artists add illustrative details and <b><i>animate</i></b> how they respond to lighting changes in real time.</p>
 
-					<p class="lead fs-5"> Shading Rig is a new framework for art-directing dynamic 3D toon shading. It lets artists add illustrative details and <b>animate</b> how they respond to lighting changes in real time.</p>
-
-					<p class="lead fs-5"> Now stylised 3D characters can always look "on-model" in games, animation, and virtual production. </p>
-					<!-- <p>Live Demo @ Real-time Live! SIGGRAPH 2021 <b>Tuesday, 10 August 2021 4:30pm - 6pm PDT</b></p> -->
-					<p><a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233"><button class="btn btn-dark" type="button"> Live demo @ Real-Time Live! SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></a></p>
-					<p><a><button class="btn btn-light" type="button"> Project Page </button></a></p>
-					<p><span class="oi oi-file"></span> <i>To appear in ACM Transactions on Graphics...</i></p>
-				</div>
+				<p class="lead fs-5"> Now stylised 3D characters can always look "on-model" in games, animation, and virtual production. </p>
+				<p><a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233"><button class="btn btn-dark" type="button"> Live demo @ Real-Time Live! SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></a></p>
+				<p><a href="/ShadingRig/"><button class="btn btn-light" type="button"> Project Page </button></a></p>
+				<p><span class="oi oi-file"></span> <i>To appear in ACM Transactions on Graphics...</i></p>
 			</div>
 		</div>
-
-<!-- 			<div class="col">
-
-					<div class="h-100 text-white rounded-3" style="background-image: url(./assets/images/rep-image_large@0.5x.jpg); background-size: 150%; background-position: center; background-repeat: no-repeat;">
-						<div class="row">
-							<p>hello</p>
-						</div>
-						<div class="row p-5" style="text-shadow: 0px 3px 5px rgb(0 0 0 / 50%);">
-							<h1 class="display-6">Shading Rig</h1>
-							<p class="lead fs-5"> Shading Rig is a new framework for art-directing dynamic 3D toon shading. It lets artists add illustrative details and also animate how they respond to lighting changes. Now stylised 3D characters can always look "on-model" in games, animation, and virtual production. </p>
-							<p><span class="oi oi-file"></span> <i>To appear in ACM Transactions on Graphics...</i></p>
-							<p><button class="btn btn-light" type="button"> Project Page </button></p>
-							<p>Live Demo @ Real-time Live! SIGGRAPH 2021 <b>Tuesday, 10 August 2021 4:30pm - 6pm PDT</b></p>
-							<p><button class="btn btn-dark" type="button"> Real-Time Live! Session SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></p>
-						</div>
-					</div>
-			</div> -->
-
 	</div>
+
+	<!-- </div> -->
 
 	<!-- <hr class="col-3 col-md-2 mb-5"> -->
 	
@@ -216,26 +181,6 @@
 							</div>
 						</div>
 					</div>
-					<script type="text/javascript">
-						write_project_card('test.png', 'some project card...')
-					</script>
-					<!-- <div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png"></img>
-
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-									</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -248,75 +193,12 @@
 			<div class="album py-5">
 
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-					<div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png" style="height: 100%; object-fit: contain;"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">Project 1</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">Modal</button>
-										<!-- <button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-										</button> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">Project 2</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-									</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">Project 3</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-									</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">Project 4</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-									</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<script type="text/javascript">
+						write_project_card('test.png', 'Project 1')
+						write_project_card('test.png', 'Project 2')
+						write_project_card('test.png', 'Project 3')
+						write_project_card('test.png', 'Project 4')
+					</script>
 				</div>
 			</div>
 		</div>
@@ -324,44 +206,13 @@
 
 </main>
 
-<div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-xl">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body d-flex justify-content-center">
-				<div class="col-md-9">
-					<h1>Example Modal</h1>
-					<p class="row-cols-1">
-						Here is some text that describes the project. It is just an example to test how it looks visually. 
-					</p>
-					<div class="row-cols-1">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
-					
-					<figure class="figure">
-						<!-- <img src="..." class="figure-img img-fluid rounded" alt="..."> -->
-						<video playsinline="" controls="" preload="metadata" src="./assets/videos/SR_DynamicAnimation.mp4" style="display: block; width: 100%; background-color: rgb(242, 241, 238);"></video>
-						<figcaption class="figure-caption p-1">A caption for the above image.</figcaption>
-					</figure>
+<div id="place_holder"></div>
+<script>
+	$(document).ready(function() {
+		$('#place_holder').load("./ex_modal.html");
+	});
+</script>
 
-					
-					<p>
-						<script type="text/javascript"> siggraph_logo(); </script>
-					</p>
-
-			        <p>This content should appear at the bottom after you scroll.</p>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
 
 <footer class="pt-5 my-5 text-muted border-top">
 	Lohit Petikam &middot; &copy; 2021
