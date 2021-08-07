@@ -36,6 +36,9 @@
 	
 	<!-- Custom styles for this template -->
 	<link href="starter-template.css" rel="stylesheet">
+
+	<script src="util.js"></script>
+
 </head>
 <body>
 	
@@ -73,6 +76,7 @@
 							My thesis developed new 3D workflows to solve problems in artistic editing and stylised rendering. 
 							I'm now seeking R&D opportunities with a keen interest in solving problems in creative industries.
 						</p>
+						<!-- <p> <a class="facebook" href="facebook.com">-</a> </p> -->
 						<p>
 							✉️ <a style="display: inline;" href="mailto:lohit.petikam@gmail.com">lohit.petikam@gmail.com</a>
 							<br>
@@ -99,17 +103,20 @@
 
 	<div class="container">
 
-		<div class="mb-4 text-white rounded bg-dark" id="shading-rig" style="background-image: url(./assets/images/rep-image_large@0.5x.jpg); background-size: 150%; background-position: center; background-repeat: no-repeat;">
-			<div class="col-md-8 p-4 p-md-5" style="background: #00000077; text-shadow: 0 5px 7px #000000ff;">
-				<h1 class="display-6">Shading Rig</h1>
+		<div class="mb-4 text-white rounded bg-dark" id="shading-rig" style="background-image: url(./assets/images/rep-img.png); background-size: 130%; background-position: center; background-repeat: no-repeat;">
+			<div class="col-md-8 p-3" style="/*background: #00000077; text-shadow: 0 5px 7px #000000ff;*/">
+				<div class="container rounded p-2" style="background: #00000077; text-shadow: 0 5px 7px #000000ff;">
+					
+					<h1 class="display-6">Shading Rig</h1>
 
-				<p class="lead fs-5"> Shading Rig is a new framework for art-directing dynamic 3D toon shading. It lets artists add illustrative details and <b>animate</b> how they respond to lighting changes in real time.</p>
+					<p class="lead fs-5"> Shading Rig is a new framework for art-directing dynamic 3D toon shading. It lets artists add illustrative details and <b>animate</b> how they respond to lighting changes in real time.</p>
 
-				<p class="lead fs-5"> Now stylised 3D characters can always look "on-model" in games, animation, and virtual production. </p>
-				<!-- <p>Live Demo @ Real-time Live! SIGGRAPH 2021 <b>Tuesday, 10 August 2021 4:30pm - 6pm PDT</b></p> -->
-				<p><a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233"><button class="btn btn-dark" type="button"> Real-Time Live! Session SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></a></p>
-				<p><a><button class="btn btn-light" type="button"> Project Page </button></a></p>
-				<p><span class="oi oi-file"></span> <i>To appear in ACM Transactions on Graphics...</i></p>
+					<p class="lead fs-5"> Now stylised 3D characters can always look "on-model" in games, animation, and virtual production. </p>
+					<!-- <p>Live Demo @ Real-time Live! SIGGRAPH 2021 <b>Tuesday, 10 August 2021 4:30pm - 6pm PDT</b></p> -->
+					<p><a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233"><button class="btn btn-dark" type="button"> Live demo @ Real-Time Live! SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></a></p>
+					<p><a><button class="btn btn-light" type="button"> Project Page </button></a></p>
+					<p><span class="oi oi-file"></span> <i>To appear in ACM Transactions on Graphics...</i></p>
+				</div>
 			</div>
 		</div>
 
@@ -209,6 +216,9 @@
 							</div>
 						</div>
 					</div>
+					<script type="text/javascript">
+						write_project_card('test.png', 'some project card...')
+					</script>
 					<!-- <div class="col">
 						<div class="card shadow-sm">
 							<img class="bd-placeholder-img card-img-top" src="./assets/images/test.png"></img>
@@ -321,7 +331,7 @@
 				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body d-flex justify-content-center">
 				<div class="col-md-9">
 					<h1>Example Modal</h1>
 					<p class="row-cols-1">
@@ -331,10 +341,19 @@
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
-					<video playsinline="" controls="" preload="metadata" src="./assets/videos/SR_DynamicAnimation.mp4" style="display: block; width: 100%; background-color: rgb(242, 241, 238);"></video>
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					
+					<figure class="figure">
+						<!-- <img src="..." class="figure-img img-fluid rounded" alt="..."> -->
+						<video playsinline="" controls="" preload="metadata" src="./assets/videos/SR_DynamicAnimation.mp4" style="display: block; width: 100%; background-color: rgb(242, 241, 238);"></video>
+						<figcaption class="figure-caption p-1">A caption for the above image.</figcaption>
+					</figure>
 
-        <p>This content should appear at the bottom after you scroll.</p>
+					
+					<p>
+						<script type="text/javascript"> siggraph_logo(); </script>
+					</p>
+
+			        <p>This content should appear at the bottom after you scroll.</p>
 				</div>
 			</div>
 			<div class="modal-footer">
