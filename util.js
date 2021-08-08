@@ -20,21 +20,32 @@ function write_navbar() {
 	document.write(nav_html)
 }
 
-function write_project_card(img,title,modal="") {
+function write_project_card(img=null,title,modal=null, pdf_link=null) {
 
 	var card_html = 
 `
 <div class="col">
 	<div class="card shadow-sm">
-		<img class="bd-placeholder-img card-img-top" src="./assets/images/${img}" style="height: 100%; object-fit: contain;"></img>
-
-		<div class="card-body">
+`
+	if (img) {
+		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${img}" style="height: 100%; object-fit: contain;"></img>`
+	}
+	
+	card_html += 
+`
+	<div class="card-body">
 			<p class="card-text lead">${title}</p>
 			<div class="d-flex justify-content-between align-items-center">
+
 				<div class="btn-group">
-					<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-					<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">Modal</button>
-					<button type="button" class="btn btn-sm btn-outline-secondary"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></button>
+`
+	if (modal) {
+		card_html += `<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#${modal}">View</button>`
+	}
+	if (pdf_link) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
+	}
+	card_html += `
 				</div>
 			</div>
 		</div>
