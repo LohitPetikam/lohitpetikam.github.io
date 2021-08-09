@@ -9,10 +9,10 @@ function write_navbar() {
 
 	<ul class="nav nav-pills">
 		<li class="nav-item"><a href="#shading-rig" class="nav-link" aria-current="page">Shading Rig</a></li>
-		<li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-		<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-		<li class="nav-item"><a href="#art" class="nav-link">Art</a></li>
-		<li class="nav-item"><a href="#music" class="nav-link">Music</a></li>
+		<li class="nav-item"><a href="#research" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Research</a></li>
+		<li class="nav-item"><a href="#projects" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Projects</a></li>
+		<li class="nav-item"><a href="#art" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Art</a></li>
+		<li class="nav-item"><a href="#music" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Music</a></li>
 		<li class="nav-item"><a href="https://www.notion.so/lohit/Lohit-Petikam-00cdaff499224fc0a3acd1fcfebcba94" class="nav-link">CV <span class="oi oi-external-link" style="font-size: 80%"></span></a></li>
 	</ul>
 </div>
