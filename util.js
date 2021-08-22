@@ -1,4 +1,3 @@
-
 function write_navbar() {
 	nav_html = 
 `
@@ -23,8 +22,7 @@ function write_navbar() {
 
 function write_project_card(card_info) {
 
-	var card_html = 
-`
+	var card_html = `
 <div class="col">
 	<div class="card shadow-sm">
 `
@@ -85,13 +83,53 @@ function write_gtag() {
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WR9NEHL98X"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'G-WR9NEHL98X');
+	gtag('config', 'G-WR9NEHL98X');
 </script>
 `	
 
 	document.write(gtag_html)
+}
+
+function write_footer() {
+	footer_html = `
+<footer class="pt-5 my-5 text-muted border-top">
+	&copy; 2021, Lohit Petikam <span id="date" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on top">🕑</span>
+</footer>`
+	document.write(footer_html)
+}
+
+function update_modified_date(_path) {
+	const desiredRepo = "lohitpetikam.github.io";
+	const dateTagClass = ".date";
+	const path = _path;
+
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function()
+	{
+		if (this.readyState == 4 && this.status == 200)
+		{
+			let response = JSON.parse(this.responseText);
+
+			let commit_date = response[0].commit.committer.date;
+			let date_str = new Date(commit_date).toString()
+			
+			$('#date').attr('data-bs-original-title', `Last modified: ${date_str}`);
+
+			console.log(path)
+		}
+	};
+	// https://api.github.com/repos/bertrandmartel/speed-test-lib/commits?path=jspeedtest%2Fbuild.gradle&page=1&per_page=1
+	xhttp.open("GET", `https://api.github.com/repos/lohitpetikam/lohitpetikam.github.io/commits?path=${path}`, true);
+	xhttp.send();
+}
+
+function init_tooltips() {
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
 }
