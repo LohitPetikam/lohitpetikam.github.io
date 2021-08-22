@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WR9NEHL98X"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-WR9NEHL98X');
+	</script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
@@ -38,6 +49,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="./util.js"></script>
 
+	
 </head>
 <body>
 	
@@ -142,7 +154,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<!-- <div class="col">
 						<div class="card shadow-sm">
 							<img class="bd-placeholder-img card-img-top" src="./assets/images/emls_thumb.png"></img>
 
@@ -160,8 +172,18 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
+					</div> -->
+					<script>
+						write_project_card({
+							badge:'Thesis',
+							img:'emls_thumb.png', 
+							title:'Art-Directed Composition in Dynamic Real Scenes', 
+							// modal:'thesisModal',
+							pdf_link:'https://openaccess.wgtn.ac.nz/articles/thesis/Art-Directed_Composition_in_Dynamic_Real_Scenes/14265254/1',
+							year:2021
+							})
+					</script>
+					<!-- <div class="col">
 						<div class="card shadow-sm">
 							<img class="bd-placeholder-img card-img-top" src="./assets/images/depth_thumb.png"></img>
 
@@ -178,8 +200,17 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
+					</div> -->
+					<script>
+						write_project_card({
+							img:'depth_thumb.png', 
+							title:'Visual Perception of Real World Depth Map Resolution for Mixed Reality Rendering', 
+							// modal:'thesisModal',
+							pdf_link:'https://ieeexplore.ieee.org/document/8446391',
+							year:2018
+							})
+					</script>
+					<!-- <div class="col">
 						<div class="card shadow-sm">
 							<img class="bd-placeholder-img card-img-top" src="./assets/images/mr360_thumb.png"></img>
 
@@ -196,7 +227,16 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					<script>
+						write_project_card({
+							img:'depth_thumb.png', 
+							title:'MR360: Mixed Reality Rendering for 360 Panoramic Videos', 
+							// modal:'thesisModal',
+							pdf_link:'https://ieeexplore.ieee.org/document/8446391',
+							year:2017
+							})
+					</script>
 				</div>
 			</div>
 		</div>
@@ -210,10 +250,18 @@
 
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
 					<script type="text/javascript">
-						// write_project_card('test.png', 'Project 1', 'exampleModalDefault')
-						// write_project_card('test.png', 'Project 2', 'thesisModal')
-						// write_project_card('test.png', 'Project 3')
-						// write_project_card('test.png', 'Project 4')
+						write_project_card({
+							img:'test.png', title:'Project 1', modal:'exampleModalDefault'
+						})
+						write_project_card({
+							img:'test.png', title:'Project 2', modal:'thesisModal'
+						})
+						write_project_card({
+							img:'test.png', title:'Project 3'
+						})
+						write_project_card({
+							img:'test.png', title:'Project 4'
+						})
 					</script>
 				</div>
 			</div>

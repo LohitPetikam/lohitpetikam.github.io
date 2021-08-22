@@ -1,3 +1,4 @@
+
 function write_navbar() {
 	nav_html = 
 `
@@ -20,33 +21,42 @@ function write_navbar() {
 	document.write(nav_html)
 }
 
-function write_project_card(img=null,title,modal=null, pdf_link=null) {
+function write_project_card(card_info) {
 
 	var card_html = 
 `
 <div class="col">
 	<div class="card shadow-sm">
 `
-	if (img) {
-		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${img}" style="height: 100%; object-fit: contain;"></img>`
+	if (card_info.img) {
+		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${card_info.img}" style="height: 100%; object-fit: contain;"></img>`
 	}
 	
-	card_html += 
-`
+	card_html += `
 	<div class="card-body">
-			<p class="card-text lead">${title}</p>
+	`
+	if (card_info.badge) {
+			card_html += `<span class="badge bg-secondary">${card_info.badge}</span>`
+	}
+	card_html += `
+			<p class="card-text lead">${card_info.title}</p>
 			<div class="d-flex justify-content-between align-items-center">
 
 				<div class="btn-group">
 `
-	if (modal) {
-		card_html += `<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#${modal}">View</button>`
+	if (card_info.modal) {
+		card_html += `<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#${card_info.modal}">View</button>`
 	}
-	if (pdf_link) {
-		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
+	if (card_info.pdf_link) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
 	}
 	card_html += `
 				</div>
+				`
+	if (card_info.year) {
+		card_html += `<small class="text-muted">${card_info.year}</small>`
+	}
+	card_html += `
 			</div>
 		</div>
 	</div>
@@ -67,4 +77,21 @@ function siggraph_logo() {
 `
 
 	document.write(logo_html)
+}
+
+function write_gtag() {
+	
+	gtag_html = `
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WR9NEHL98X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WR9NEHL98X');
+</script>
+`	
+
+	document.write(gtag_html)
 }
