@@ -78,7 +78,7 @@
 
 <main>
 
-	<div class="row pt-1 g-5" id="research">
+	<div class="row pt-1 g-5">
 		<div class="container">
 			<p class="display-1">Shading Rig</p>
 			<p class="display-6">Dynamic Art-directable Stylised Shading for 3D Characters</p>
@@ -105,29 +105,47 @@
 			<sup>2</sup> <a href="https://olm.co.jp/rd/?lang=en">OLM Digital</a>
 		</div>
 	</div>
-	<div class="row pt-3 mb-3 text-center">
-		<p><i>To appear in ACM Transaction on Graphics 2021...</i></p>
-		<p>
-			<script type="text/javascript">siggraph_logo()</script>
-			<a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233"><button class="btn btn-dark" type="button"> Live demo @ Real-Time Live! SIGGRAPH 2021 <span class="oi oi-external-link" style="font-size: 80%"></span> </button></a> 
-		</p>
-	</div>
-	
 	<div class="row pt-5 mb-3">
-		<div class="col mx-auto themed-grid-col text-center">
-			<figure class="figure">
-					<iframe width="600" height="300"  src="https://www.youtube-nocookie.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<figcaption class="figure-caption p-1">Teaser research video. Full paper video coming soon.</figcaption>
-			</figure>
+		<div class="row pt-3 mb-3 text-center">
+			<p><i>To appear in ACM Transaction on Graphics 2021...</i></p>
 		</div>
+	
+		<!-- <div class="col mx-auto themed-grid-col"> -->
+		<figure class="figure">
+			<div class="embed-container">
+				<!-- <iframe width="600" height="300"  src="https://www.youtube-nocookie.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				<iframe src="https://www.youtube-nocookie.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<figcaption class="figure-caption p-1">Teaser research video. Full paper video coming soon.</figcaption>
+		</figure>
+		<!-- </div> -->
 
+	</div>
+
+
+	<div class="row pt-5 mb-3">
+
+		<div class="row pt-3 mb-3 text-center">
+			<p>As seen on <i>Real-Time Live!</i> SIGGRAPH 2021</p>
+			<p>
+				<script type="text/javascript">siggraph_logo()</script>
+				<a href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233" class="btn btn-dark" type="button"> RTL Session Page <span class="oi oi-external-link" style="font-size: 80%"></span> </a> 
+			</p>
+		</div>
+		<figure class="figure">
+			<div class="embed-container">
+				<!-- <iframe width="600" height="300"  src="https://www.youtube-nocookie.com/embed/Awozhaly3w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5VK_gGQC6KU?start=1121" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<figcaption class="figure-caption p-1">Demo begins at 18:41.</figcaption>
+		</figure>
 	</div>
 
 	
 	<div class="row pt-5 mb-3">
 
 		<p>
-			Toon shading often gives poor results on 3D characters. Current rotoscoped shadows used in film aren't real-time for games. Current toon shaded games use painted/textured/baked shadows that don't change with lighting. 
+			Toon shading often gives poor results on 3D characters. Rotoscoped shadows used in film aren't real-time for games. Current toon shaded games use painted/textured/baked shadows that don't change with lighting. 
 		</p>
 		<p>
 			<i>Shading Rig</i> is a new workflow to animate artist-defined shading with lighting changes, and preserve art-direction in real-time toon shaded games.
