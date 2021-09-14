@@ -39,13 +39,14 @@
 		font-size: 3.5rem;
 		}
 	}
+
 	</style>
 
 	
 	<link href="starter-template.css" rel="stylesheet">
 
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 100%22><text y=%22.9em%22 font-size=%2290%22>🐙</text></svg>">
-
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="./util.js"></script>
 
@@ -134,7 +135,8 @@
 			<div class="album py-5">
 
 				<!-- class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" -->
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-masonry='{"percentPosition": true }'>
+				<!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> -->
 					<div class="col">
 						<div class="card shadow-sm">
 							<img class="bd-placeholder-img card-img-top" src="./assets/images/sr_thumb.png" style="height: 100%; object-fit: contain;"></img>
@@ -144,97 +146,51 @@
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
 										<a type="button" class="btn btn-sm btn-outline-secondary" href="/ShadingRig/">Project</a>
-										<a type="button" class="btn btn-sm btn-outline-secondary" href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233">RTL2021 <span class="oi oi-external-link" style="font-size: 80%"></span></a>
-										<!-- <button type="button" class="btn btn-sm btn-outline-secondary">
-										PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-										</button> -->
+										<!-- <a type="button" class="btn btn-sm btn-outline-secondary" href="https://s2021.siggraph.org/presentation/?id=real_105&sess=sess233">RTL2021 <span class="oi oi-external-link" style="font-size: 80%"></span></a> -->
+										<a href="./assets/papers/ShadingRig_TOG.pdf" type="button" class="btn btn-sm btn-outline-secondary">
+										PDF <span class="oi oi-data-transfer-download" style="font-size: 80%"></span>
+										</a>
 									</div>
-									<small class="text-muted">2021</small>
+									<small class="text-muted"> TOG 2021</small>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/emls_thumb.png"></img>
-
-							<div class="card-body">
-								<span class="badge bg-secondary">Thesis</span>
-								<p class="card-text lead">Art-Directed Composition in Dynamic Real Scenes</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-											PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-										</button>
-									</div>
-									<small class="text-muted">2021</small>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					<script>
+						write_project_card({
+							img:'emls_thumb.png', 
+							title:'Art-directing Appearance using an Environment Map Latent Space', 
+							project:'/EMLatentSpace/',
+							pdf_dl:'./assets/papers/PG2021_EM_Latent_Space__short_.pdf',
+							year:"PG 2021"
+							})
+					</script>
 					<script>
 						write_project_card({
 							badge:'Thesis',
-							img:'emls_thumb.png', 
+							// img:'emls_thumb.png', 
 							title:'Art-Directed Composition in Dynamic Real Scenes', 
 							// modal:'thesisModal',
 							pdf_link:'https://openaccess.wgtn.ac.nz/articles/thesis/Art-Directed_Composition_in_Dynamic_Real_Scenes/14265254/1',
 							year:2021
 							})
 					</script>
-					<!-- <div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/depth_thumb.png"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">Visual Perception of Real World Depth Map Resolution for Mixed Reality Rendering</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-											PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-										</button>
-									</div>
-									<small class="text-muted">2018</small>
-								</div>
-							</div>
-						</div>
-					</div> -->
 					<script>
 						write_project_card({
 							img:'depth_thumb.png', 
 							title:'Visual Perception of Real World Depth Map Resolution for Mixed Reality Rendering', 
 							// modal:'thesisModal',
 							pdf_link:'https://ieeexplore.ieee.org/document/8446391',
-							year:2018
+							year:"IEEEVR 2018"
 							})
 					</script>
-					<!-- <div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img card-img-top" src="./assets/images/mr360_thumb.png"></img>
-
-							<div class="card-body">
-								<p class="card-text lead">MR360: Mixed Reality Rendering for 360 Panoramic Videos</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-											PDF <span class="oi oi-external-link" style="font-size: 80%"></span>
-										</button>
-									</div>
-									<small class="text-muted">2017</small>
-								</div>
-							</div>
-						</div>
-					</div> -->
 					<script>
 						write_project_card({
 							img:'mr360_thumb.png', 
 							title:'MR360: Mixed Reality Rendering for 360 Panoramic Videos', 
 							// modal:'thesisModal',
 							pdf_link:'https://ieeexplore.ieee.org/document/7829404',
-							year:2017
+							year:"IEEEVR 2017"
 							})
 					</script>
 				</div>

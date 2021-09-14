@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-WR9NEHL98X"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-WR9NEHL98X');
+	</script> -->
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Art-directing Appearance using an Environment Map Latent Space. Lohit Petikam, Andrew Chalmers, Ken Anjyo, Taehyun Rhee">
+	<meta name="author" content="Lohit Petikam">
+	<meta name="generator" content="">
+	<title>Art-directing Appearance using an Environment Map Latent Space</title>
+
+	
+	<link href="../open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+	.bd-placeholder-img {
+		font-size: 1.125rem;
+		text-anchor: middle;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+	}
+
+	@media (min-width: 768px) {
+		.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+		}
+	}
+	.centered-div {
+		/*position: absolute;*/
+		margin: auto;
+		/*left: 50%;*/
+		transform: translate(-50%, -50%);
+	}
+	</style>
+
+	
+	<link href="../starter-template.css" rel="stylesheet">
+
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="../util.js"></script>
+
+</head>
+<body>
+	
+<div class="col-md-6 mx-auto p-3 py-md-5">
+<header class="d-flex align-items-center pb-3 mb-5">
+	<div class="container">
+
+<!-- 		<script type="text/javascript">
+			write_navbar();
+		</script> -->
+
+
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Environment Map Latent Space</li>
+			</ol>
+		</nav>
+</header>
+
+
+<main>
+
+	<div class="row pt-1 g-5">
+		<div class="container">
+			<!-- <p class="display-1">Shading Rig</p> -->
+			<p class="display-3">Art-directing Appearance using an Environment Map Latent Space</p>
+		</div>
+	</div>
+
+	<div class="row lead pt-3 mb-3 text-center">
+		<div class="col-6 col-sm-3 themed-grid-col">
+			<a href="/">Lohit Petikam</a><sup>1</sup>
+		</div>
+		<div class="col-6 col-sm-3 themed-grid-col">
+			<a href="https://people.wgtn.ac.nz/andrew.chalmers">Andrew Chalmers</a><sup>1</sup>
+		</div>
+		<div class="col-6 col-sm-3 themed-grid-col">
+			<a href="https://olm.co.jp/rd/anjyo/?lang=en">Ken Anjyo</a><sup>1,2</sup>
+		</div>
+		<div class="col-6 col-sm-3 themed-grid-col">
+			<a href="https://people.wgtn.ac.nz/taehyun.rhee">Taehyun Rhee</a><sup>1</sup>
+		</div>
+	</div>
+
+	<div class="row pt-3 mb-3 text-center">
+		<div class="col-6 col-sm-6 themed-grid-col">
+			<sup>1</sup> <a href="https://www.wgtn.ac.nz/cmic">Computational Media Innovation Centre<br>Victoria University of Wellington</a>
+		</div>
+		<div class="col-6 col-sm-6 themed-grid-col">
+			<sup>2</sup> <a href="https://olm.co.jp/rd/?lang=en">OLM Digital</a>
+		</div>
+	</div>
+	<div class="row pt-5 mb-3">
+		<div class="row mb-3 text-center">
+			<p><i>To appear in Pacific Graphics 2021 Short Papers...</i></p>
+		</div>
+
+		<div class="row pt-3 mb-3 text-center">
+			<p><a href="../assets/papers/PG2021_EM_Latent_Space__short_.pdf" class="btn btn-dark" type="button">Paper pre-print <span class="oi oi-data-transfer-download" style="font-size: 80%"></span></a></p
+			>
+			<p><a href="../assets/papers/PG2021_EM_Latent_Space__short___Supplemental_.pdf"> 📄 Supplemental Material </a></p>
+		</div>
+	
+		<figure class="figure">
+			<div class="embed-container">
+				<iframe src="https://www.youtube-nocookie.com/embed/Dz48sfABQ1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- <figcaption class="figure-caption p-1">Submission video.</figcaption> -->
+		</figure>
+
+	</div>
+
+
+
+	
+	<div class="row pt-5 mb-3">
+
+		<p>
+			<b>Problem</b>: Artists need to make stylistic 3D lighting edits uniquely for different environments, e.g. "boost rim-light when sunny", and "add highlights when cloudy". Current artistic editing techniques can't adapt to different changing lighting environments, which is needed for real-time games and AR apps.
+		</p>
+		<p>
+			We developed a new workflow for artists to art-direct 3D appearance across different lighting conditions. To do this we learned a latent space of varied lighting environments, that enables the following:
+			<!-- 1. In look-development, artists can intuitively browse the latent space and preview many environments organised in semantic clusters.
+			2. Artists then paint directly on the space to specify how 3D lighting edits should vary across environments.
+			3. Games and AR apps with dynamic environments, encode them into the latent space, and look-up the desired artistic appearance. -->
+
+			<ol class="list-group list-group-numbered">
+				<li class="list-group-item"> In look-development, artists can intuitively browse the latent space and preview many environments organised in semantic clusters.</li>
+				<li class="list-group-item"> Artists then paint directly on the space to specify how 3D lighting edits should vary across environments.</li>
+				<li class="list-group-item"> Games and AR apps with dynamic environments, encode them into the latent space, and look-up the desired artistic appearance.</li>
+			</ol>
+		</p>
+	</div>
+
+	<div class="col pt-3 mx-auto themed-grid-col text-left">
+		<figure class="figure">
+			<img src="../assets/images/EMLS_Teaser.png" class="figure-img img-fluid rounded" alt="Environment Map Latent Space teaser image">
+			<figcaption class="figure-caption p-1">
+				(a) Our environment map (EM) latent space expresses semantic clustering in 2D, for navigating a varied EM database during look development. <br>
+				(b) Art directing material and lighting edits by 2D painting across the latent space. <br>
+				(c) Art-directed appearance is preserved in similar EMs, and dynamically adapted to changing environment lighting.
+			</figcaption>
+		</figure>
+	</div>
+
+</main>
+
+<script>write_footer()</script>
+
+</div>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>init_tooltips()</script>
+<script>update_modified_date('EMLatentSpace/index.html')</script>
+	
+</body>
+</html>

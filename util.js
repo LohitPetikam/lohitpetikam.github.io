@@ -45,8 +45,14 @@ function write_project_card(card_info) {
 	if (card_info.modal) {
 		card_html += `<button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#${card_info.modal}">View</button>`
 	}
+	if (card_info.project) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.project}"> Project</a>`
+	}
 	if (card_info.pdf_link) {
 		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
+	}
+	if (card_info.pdf_dl) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.pdf_dl}"> PDF <span class="oi oi-data-transfer-download" style="font-size: 80%"></span></a>`
 	}
 	card_html += `
 				</div>
