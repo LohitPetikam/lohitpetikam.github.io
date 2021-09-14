@@ -27,7 +27,7 @@ function write_project_card(card_info) {
 	<div class="card shadow-sm">
 `
 	if (card_info.img) {
-		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${card_info.img}" style="height: 100%; object-fit: contain;"></img>`
+		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${card_info.img}" style="height:200px; object-fit: cover;"></img>`
 	}
 	
 	card_html += `
