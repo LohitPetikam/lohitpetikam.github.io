@@ -130,8 +130,9 @@
 			<div class="album py-3">
 
 				<!-- class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" -->
-				<!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-masonry='{"percentPosition": true }'> -->
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-masonry='{"percentPosition": true }'> -->
+				<!-- <div class="row" data-masonry='{"percentPosition": true }'> -->
 					<script>
 						write_project_card({
 							img:'emls_thumb.png', 
@@ -185,8 +186,11 @@
 			<h2>Projects</h2>
 			<div class="album py-3">
 
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 					<script type="text/javascript">
+						write_project_card({
+							img:'pll_thumb.png', title:'Python "LiveLink" between DCCs and system Python', github_link:'https://github.com/LohitPetikam/PythonLiveLink'
+						})
 						write_project_card({
 							img:'sketch360_thumb.png', title:'360 Sketching: WebGL iPad sketching app', modal:'sketch360_modal'
 						})
@@ -196,9 +200,6 @@
 						write_project_card({
 							img:'quasi_thumb.png', title:'QuasiSDF: SDF Sculpting and Rendering', modal:'quasi_modal'
 						})
-						// write_project_card({
-						// 	img:'test.png', title:'Project 4'
-						// })
 					</script>
 				</div>
 			</div>
@@ -213,7 +214,7 @@
 			🚧 The rest of the site is under construction. 
 			<!-- <a href="https://www.notion.so/lohit/Lohit-Petikam-00cdaff499224fc0a3acd1fcfebcba94">See my CV for now. <span class="oi oi-external-link" style="font-size: 80%"></span></a> --> 
 			For now, see 
-			👨‍💻<a style="display: inline;" href="https://github.com/LohitPetikam">Github </a>, 
+			👨‍💻<a style="display: inline;" href="https://github.com/LohitPetikam">Github</a> for code projects, 
 			📺<a href="https://www.youtube.com/channel/UCSGfoN9P5afvVSpMXiE8W_g">YouTube </a> for music, and 
 			📷<a href="https://www.instagram.com/lohit.petikam">Instagram</a> for art.
 			<!-- 🚧 -->
@@ -223,19 +224,6 @@
 
 </main>
 
-<!-- <div id="ex_modal_ph"></div>
-<script>
-	$(document).ready(function() {
-		$('#ex_modal_ph').load("./ex_modal.html");
-	});
-</script>
-
-<div id="thesis_modal_ph"></div>
-<script>
-	$(document).ready(function() {
-		$('#thesis_modal_ph').load("./thesis_modal.html");
-	});
-</script> -->
 
 <script>
 	add_modals({

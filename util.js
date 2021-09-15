@@ -24,7 +24,7 @@ function write_project_card(card_info) {
 
 	var card_html = `
 <div class="col">
-	<div class="card shadow-sm">
+	<div class="card shadow-sm h-100">
 `
 	if (card_info.img) {
 		card_html += `<img class="bd-placeholder-img card-img-top" src="./assets/images/${card_info.img}" style="height:200px; object-fit: cover;"></img>`
@@ -47,6 +47,9 @@ function write_project_card(card_info) {
 	}
 	if (card_info.project) {
 		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.project}"> Project</a>`
+	}
+	if (card_info.github_link) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.github_link}"> Github <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
 	}
 	if (card_info.pdf_link) {
 		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
