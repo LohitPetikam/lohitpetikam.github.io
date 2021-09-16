@@ -1,0 +1,46 @@
+
+<div class="modal fade" id="bloom_modal" tabindex="-1" aria-labelledby="bloomLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="bloomLabel">GPU FFT Bloom</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body d-flex justify-content-center">
+				<div class="col-md-9">
+
+					<div class="row-cols-1">
+						<figure class="figure">
+							<div class="embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/1jgGHSx8Sn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!-- <figcaption class="figure-caption p-1">Submission video.</figcaption> -->
+						</figure>
+					</div>
+
+					<p>
+						Bloom is a visual effect in graphics that adds a glow to very bright pixels that have luminance greater than the display's maximum RGB output values. This is typically done by blurring only the bright pixels in an image and adding the result to the original image.
+					</p>
+
+					<p>
+						For stylised bloom filters, the bright pixels are instead convolved with different shaped filter images (e.g. circle, star, hexagon, lens-flare, etc.)
+					</p>
+
+					<p>
+						For very large-area stylised bloom effects, large filters must be used, but performing such large convolutions naively is not real-time.
+					</p>
+
+					<p>
+						I implemented frequency-domain convolution to achieve large bloom convolutions in real-time. My implementation optimises large-area stylised bloom by computing FFTs and inverse-FFTs in a parallelised GLSL compute shader. Below shows the demo written in C++ using OpenGL.
+					</p>
+
+					
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
