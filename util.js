@@ -54,6 +54,9 @@ function write_project_card(card_info) {
 	if (card_info.youtube) {
 		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.youtube}"> Video <span class="oi oi-video"></span></a>`
 	}
+	if (card_info.web) {
+		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.web}"> Web <span class="oi oi-globe"></span></a>`
+	}
 	if (card_info.pdf_link) {
 		card_html += `<a type="button" class="btn btn-sm btn-outline-secondary" href="${card_info.pdf_link}"> PDF <span class="oi oi-external-link" style="font-size: 80%"></span></a>`
 	}
