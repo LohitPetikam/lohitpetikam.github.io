@@ -169,7 +169,7 @@ function add_modals(data) {
 function insert_SA2021_notif() {
 
 	alert_html = `<div class="alert alert-info" role="alert">
-				<span class="anim-slow-blink">📡</span> &nbsp The <i>Shading Rig</i> technical talk is currently on-demand at <a href="https://siggraphasia.delegateconnect.co/talks/3d">SIGGRAPH Asia 2021!  <span class="oi oi-external-link" style="font-size: 80%"></span></a>
+				<span class="anim-slow-blink">📡</span> &nbsp The <a href="/ShadingRig/"><i>Shading Rig</i></a> technical talk is currently on-demand at <a href="https://siggraphasia.delegateconnect.co/talks/3d">SIGGRAPH Asia 2021!  <span class="oi oi-external-link" style="font-size: 80%"></span></a>
 			</div>`
 	document.write(alert_html)
 }
