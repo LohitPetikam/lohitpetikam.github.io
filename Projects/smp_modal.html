@@ -1,0 +1,47 @@
+
+<div class="modal fade" id="smp_modal" tabindex="-1" aria-labelledby="smpLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="smpLabel">Spectral Mesh Processing in Blender</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body d-flex justify-content-center">
+				<div class="col-md-9">
+
+					<p class="">Spectral mesh processing plugin for Blender. Github: <a href="https://github.com/LohitPetikam/SpectralMesh">https://github.com/LohitPetikam/SpectralMesh</a></p>
+					<p class="">Basic implementation of <em>Spectral mesh processing</em> [Bruno Lévy and Hao (Richard) Zhang. 2010 ACM SIGGRAPH Courses]</p>
+					
+					<p class="">Spectral mesh processing is a way of decomposing a 3D surface mesh into a series of harmonics with different frequencies. Manipulating the harmonics gives interesting transformations to the mesh.</p>
+					<p class="">Below is a monkey head with its frequency content being gradually introduced from low to high frequency:</p>
+
+
+					<div class="row-cols-1">
+						<figure class="figure">
+							<video playsinline="" controls="" preload="metadata" src="./assets/videos/smp-1.mp4" style="display: block; margin: 0 auto;background-color: rgb(242, 241, 238);"></video>
+						</figure>
+					</div>
+
+					<p class=""></p>
+
+					<p class="">Due to the intuitive analogy between spectral mesh processing and spectral audio processing (e.g. equalisers in audio applications), I used this to create the music visualisation below:</p>
+
+
+					<div class="row-cols-1">
+						<figure class="figure">
+							<div class="embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/ybhOdLdlgng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</figure>
+					</div>
+
+					<p class="">Here, the font is animated as a 3D mesh with the audio spectrum driving the manifold harmonics. Note that this is more than simple scaling based on audio volume. The font becomes spikier or rounder as the sounds and instruments become dull and sharp respectively.</p>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
