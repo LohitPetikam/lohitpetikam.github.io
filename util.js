@@ -13,7 +13,6 @@ function write_navbar() {
 		<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
 		<li class="nav-item"><a href="#art" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Art</a></li>
 		<li class="nav-item"><a href="#music" class="nav-link disabled"><span style="font-size: 80%; opacity:0.5">🚧</span> Music</a></li>
-		<li class="nav-item"><a href="https://www.notion.so/lohit/Lohit-Petikam-00cdaff499224fc0a3acd1fcfebcba94" class="nav-link">CV <span class="oi oi-external-link" style="font-size: 80%"></span></a></li>
 	</ul>
 </div>
 `
